@@ -1,7 +1,11 @@
 * {
     padding: 0;
     margin: 0;
-    color: white;
+    color: #cccbb7;
+    font-variant: small-caps;
+}
+.getready {
+    margin: 1em;
 }
 header {
     width: 100vw;
@@ -10,7 +14,7 @@ header {
     overflow: hidden;
 }
 main {
-    background-color: black;
+    background-color: #151413;
 }
 .background {
     width: 100%;
@@ -19,7 +23,7 @@ main {
     z-index: -1;
     background-position: center;
     background-size: cover;
-    background-color: black;
+    background-color: #151413;
 }
 .about {
     padding: 2vw;
@@ -27,11 +31,48 @@ main {
     align-items: center;
     justify-content: center;
 }
+.eftinfo {
+    padding: 2vh;
+}
 .PMC {
     padding: 2vw;
     margin: 2vw;
 }
+.pmcicon {
+    width: 300px;
+    height: 370px;
+}
 .features {
     padding: 2vw;
     margin: 2vh;
+}
+.after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #837457;
+}
+.infoimgs {
+    border: #837457;
+    box-shadow:     
+    inset 0 -3em 3em #837457,
+    0 0 0 1px #837457,
+    0.3em 0.3em 1em #837457;
+}
+.gameinfoimg {
+    border: #837457;
+    box-shadow:     
+    inset 0 -3em 3em #837457,
+    0 0 0 1px #837457,
+    0.3em 0.3em 1em #837457;
+    margin: 1em;
+}
+.features-list {
+    padding: 1em;
+}
+li {
+    padding: 5px;
 }
