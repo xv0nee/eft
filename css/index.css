@@ -33,7 +33,7 @@ main {
     background-color: #151413;
 }
 .about {
-    padding: 2vw;
+    padding: 2em;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -101,4 +101,23 @@ li {
 }
 .featurestext {
     padding: 20px;
+}
+footer {
+    display: flex;
+    align-items: center;
+    padding-bottom:2em;
+    padding-left:5em ;
+}
+.about h2 {
+    color: #837457;
+}
+.features-list h2 {
+    color: #837457;
+}
+.comments h2 {
+    color: #837457;
+}
+.about h2{
+    line-height: 2em;
+    padding: 1em;
 }
