@@ -1,7 +1,17 @@
+:root{
+    --primary: #837457;
+    --secondary: #b39f77;
+    --background: #151413;
+    --text: #b0ad96;
+    --primaryinv: #5e6980;
+    --secondaryinv: #4f5169;
+    --backgroundinv: #eaebec;
+    --textinv: #4f5169;
+}
 * {
     padding: 0;
     margin: 0;
-    color: #b0ad96;
+    color: var(--text);
     font-variant: small-caps;
     font-family: 'custom', sans-serif;
 }
@@ -21,17 +31,29 @@ header {
     overflow: hidden;
 }
 main {
-    background-color: #151413;
+    background-color: var(--background);
 }
-
-.head-text{
-    
+.theme-change{
+    width: 5vw;
+    height: 5vh;
+    color: var(--primary);
+    box-shadow:     
+    inset 0 10em 3em var(--primary),
+    0 0 0 1px var(--primary),
+    0.3em 0.3em 1em var(--primary);
+    border-radius: 1vh;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
 }
-
-.content {
-
+.theme-change:hover{
+    background-color: var(--secondary);
+    box-shadow:     
+    inset 0 10em 3em var(--secondary),
+    0 0 0 1px var(--secondary),
+    0.3em 0.3em 1em var(--secondary);
 }
-
 .background {
     width: 100%;
     height: 100%;
@@ -39,7 +61,7 @@ main {
     z-index: -1;
     background-position: center;
     background-size: cover;
-    background-color: #151413;
+    background-color: var(--background);
     transform: translateZ(-50px) scale(1.1);
 }
 .about {
@@ -81,21 +103,21 @@ main {
     left: 0;
     width: 60px;
     height: 3px;
-    background: #837457;
+    background: var(--primary);
 }
 .imgs {
-    border: #837457;
+    border: var(--primary);
     box-shadow:     
-    inset 0 -3em 3em #837457,
-    0 0 0 1px #837457,
-    0.3em 0.3em 1em #837457;
+    inset 0 -3em 3em var(--primary),
+    0 0 0 1px var(--primary),
+    0.3em 0.3em 1em var(--primary);
 }
 .gameinfoimg {
-    border: #837457;
+    border: var(--primary);
     box-shadow:     
-    inset 0 -3em 3em #837457,
-    0 0 0 1px #837457,
-    0.3em 0.3em 1em #837457;
+    inset 0 -3em 3em var(--primary),
+    0 0 0 1px var(--primary),
+    0.3em 0.3em 1em var(--primary);
     margin: 1em;
 }
 .features-list {
@@ -119,13 +141,13 @@ footer {
     padding-left:5em ;
 }
 .about h2 {
-    color: #837457;
+    color: var(--primary);
 }
 .features-list h2 {
-    color: #837457;
+    color: var(--primary);
 }
 .comments h2 {
-    color: #837457;
+    color: var(--primary);
 }
 .about h2{
     line-height: 2em;

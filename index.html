@@ -10,31 +10,35 @@
     <script src="libs/gsap/gsap.min.js"></script>
     <script src="libs/gsap/ScrollSmoother.min.js"></script>
     <script src="libs/gsap/ScrollTrigger.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
 </head>
 
 <body>
+    <div class="theme-change">
+        <i class="fas fa-moon"></i>
+    </div>
     <div class="wrapper">
         <div class="wrapper-content">
             <header class="hero">
                 <div class="layers-container">
                     <div class="background" style="background-image: url(imgs/usecbearmain.png)"></div>
                     <div class="head-text">
-                        <div class="content">
-                            <h1>sdf;vbjsdlkf</h1>
-                            <p>dsjlkvnskjdnvnv</p>
-                        </div>
+                        <div class="content"></div>
                     </div>
                 </div>
             </header>
             <main>
                 <section class="about">
-                    <a href="https://www.escapefromtarkov.com/"><img src="imgs\EFT.png\"></a>
+                    <a href="https://www.escapefromtarkov.com/"><img src="imgs\EFT.png\" id="EFT"></a>
                     <h1 class="eftinfo">Это хардкорная реалистичная сюжетная многопользовательская онлайн-игра,
                         сочетающая в себе черты жанров FPS / TPS, боевого симулятора и RPG c ММО элементами.
                     </h1>
-                    <img src="imgs\getrdyfescape.png\" class="getready">
+                    <img src="imgs\getrdyfescape.png\" class="getready" id="getrdy">
                     <div class="gameinfo">
-                        <h2><img src="imgs\norvinsk.png" class="imgs">г. Тарков, Норвинская обл. наши дни.</h2>
+                        <h2><img src="imgs\norvinsk.png" class="imgs">г. Тарков, Норвинская обл.</h2>
                         <h3>События Escape from Tarkov происходят в вымышленной Норвинской особой экономической
                             зоне, бывшей в пору своего расцвета мостом между Россией и Европой. К несчастью,
                             льготные условия налогообложения и преференции для иностранных инвесторов привлекли
@@ -64,14 +68,14 @@
                 <section class="comments">
                     <div>
                         <h2>Battle Encounter Assault Regiment</h2>
-                        <img src="imgs\bearlogo.png\" class="pmcicon">
+                        <img src="imgs\bearlogo.png\" class="pmcicon" id="bearicon">
                         <p>Является частной военной компанией одной из главных фракций в Escape from Tarkov.
                             Компания BEAR используется правительственными органами Норвинского региона для
                             выявления любых доказательств незаконной деятельности группы Terra Group.</p>
                     </div>
                     <div>
                         <h2>United Security</h2>
-                        <img src="imgs\useclogo.png\" class="pmcicon">
+                        <img src="imgs\useclogo.png\" class="pmcicon" id="usecicon">
                         <p>Является частной военной компанией одной из главных фракций в Escape from Tarkov.
                             USEC работает на международную корпорацию Terra Group, активно участвует в
                             вооруженных столкновениях, препятствующих расследованию деятельности Terra Group,
