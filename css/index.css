@@ -47,6 +47,11 @@ main {
     right: 10px;
     z-index: 1000;
 }
+.theme-change i {
+    display: flex;
+    justify-content: center;
+    margin: 0.9em;
+}
 .theme-change:hover{
     background-color: var(--secondary);
     box-shadow:     
@@ -65,18 +70,24 @@ main {
     transform: translateZ(-50px) scale(1.1);
 }
 .about {
-    padding: 2em;
+
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 .eftinfo {
-    padding: 2vh;
+    padding: 1em;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 .gameinfo {
     display: flex;
     align-items: center;
-    gap: 20px;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em
 }
 .comments {
     margin: 5em;
@@ -191,26 +202,39 @@ h2 {
     width: 23vh;
     height: 23vh;
     display: flex;
-    align-items: left;
-    justify-content: left;
 }
 .playbtn {
     margin: 0.5em;
+    align-items: bottom;
+    justify-content: bottom;
     width: 2vw;
-    height: 2vh;
+    height: 4vh;
     border-radius: 100%;
-    background-color: #b8b8b8;
+    background-color: gray;
 }
 .progressbar {
     display: flex;
-    align-items: left;
-    justify-content: left;
+    align-items: bottom;
+    justify-content: bottom;
     margin: 0.5em;
     width: 15vw;
     height: 1vh;
     border-radius: 0.5em;
-    background-color: #b8b8b8;
+    background-color: gray;
 }
 .musicprogress {
     padding: 1em;
+}
+.musicprogress h2 {
+    padding-bottom: 2em;
+    color: darkgray;
+}
+.time {
+    color: darkgray;
+}
+.progress {
+    height: 100%;
+    width: 0%;
+    background-color: rgb(80, 80, 80);;
+    border-radius: 0.5em;
 }

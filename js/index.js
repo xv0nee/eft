@@ -1,5 +1,6 @@
 gsap.registerPlugin(ScrollSmoother, ScrollTrigger)
 const sensitivity = 0.02
+const progress = document.querySelector('.progress')
 document.addEventListener('mousemove', (e) => {
     let dx = (e.clientX - window.innerWidth / 2) * sensitivity
     let dy = (e.clientY - window.innerHeight / 2) * sensitivity
@@ -21,7 +22,7 @@ document.addEventListener('mousemove', (e) => {
 ScrollSmoother.create({
     wrapper: ".wrapper",
     content: ".wrapper-content",
-    smooth: 1.5,
+    smooth: 1,
     effects: true
 })
 gsap.utils.toArray("section").forEach(section => {
@@ -77,12 +78,18 @@ function initPlayer() {
     })
     const time = document.querySelector('.time')
     audio.addEventListener('timeupdate', () => {
+        progress.style.width = `${audio.currentTime / audio.duration * 100}%`
+
         let minutes = Math.floor(audio.currentTime / 60)
         let seconds = Math.floor(audio.currentTime % 60).toString().padStart(2, "0")
-        let maxMinutes = Math.floor(audio.currentTime / 60)
-        let maxSeconds = Math.floor(audio.currentTime % 60).toString().padStart(2, "0")
-        time.innerHTML = `${minutes}:${seconds} / ${maxMinutes}:${maxSeconds}`
+        // let maxMinutes = Math.floor(audio.currentTime / 60)
+        // let maxSeconds = Math.floor(audio.currentTime % 60).toString().padStart(2, "0") ${maxMinutes}:${maxSeconds}
+         time.innerHTML = `${minutes}:${seconds} / 2:52`
+    })
+    document.querySelector('.progressbar').addEventListener('click', (e) => {
+        const rect = e.target.getBoundingClientRect()
+        const pos = (e.clientX - rect.left) / rect.width
+        audio.currentTime = pos * audio.duration
     })
 }
-
 document.addEventListener("DOMContentLoaded", initPlayer)
